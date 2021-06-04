@@ -1,0 +1,31 @@
+{
+  "name": "mysql-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TakahiroIshii/mysql-test.git",
+  "author": "Takahiro Ishii <takaishiijp@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "TS_NODE_TRANSPILE_ONLY=1 nodemon -r ts-node/register  src/server.ts | pino-pretty --translateTime"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "nodemon": "^2.0.7",
+    "pino-pretty": "^5.0.2",
+    "prettier": "^2.3.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "aigle": "^1.14.1",
+    "aws-sdk": "^2.921.0",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "pino": "^6.11.3",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.19",
+    "tsyringe": "^4.5.0",
+    "typeorm": "^0.2.34"
+  }
+}
